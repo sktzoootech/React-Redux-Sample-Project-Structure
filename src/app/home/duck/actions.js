@@ -1,4 +1,3 @@
-// actions.js
 import { createActions } from 'reduxsauce';
 
 const { Types, Creators } = createActions({

@@ -3,7 +3,6 @@ import shortid from 'shortid';
 
 function RedditComponent(props) {
 
-  console.log(props);
     if( props.showSpinner ) { return <p>Loading...</p> }
     return (
         <ul>

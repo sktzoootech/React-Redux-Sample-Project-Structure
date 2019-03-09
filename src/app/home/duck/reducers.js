@@ -1,5 +1,4 @@
-// reducers.js
-import types from './types';
+import { Types as types } from './actions';
 
 const INITIAL_STATE = {
   count: 0,
@@ -8,7 +7,9 @@ const INITIAL_STATE = {
   subredditData: []
 }
 const homeReducer = (state=INITIAL_STATE, action) => {
+
   switch(action.type) {
+    
     case types.INCREMENT_COUNT: {
       const { value } = action;
       const { count } = state;
